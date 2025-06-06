@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    
+    <group
+        android:id="@+id/group_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio"/>
+    </group>
+
+    <group
+        android:id="@+id/group_documents"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_constancias"
+            android:icon="@drawable/ic_document"
+            android:title="Constancia de Trabajo"/>
+            
+        <item
+            android:id="@+id/nav_recibos"
+            android:icon="@drawable/ic_payment"
+            android:title="Mis Recibos"/>
+            
+        <item
+            android:id="@+id/nav_verificador"
+            android:icon="@drawable/ic_certificate"
+            android:title="Verificador de Constancias"/>
+    </group>
+    
+    <group
+        android:id="@+id/group_settings"
+        android:checkableBehavior="none">
+        <item android:title="Configuración">
+            <menu>    
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Ajustes"/>
+                    
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Cerrar Sesión"/>
+            </menu>
+        </item>
+    </group>
+</menu> 
